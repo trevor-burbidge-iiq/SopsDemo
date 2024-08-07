@@ -1,2 +1,9 @@
 creation_rules:
-- kms: arn:aws:kms:us-east-2:905418326298:key/f3f13a0d-2042-496f-ba47-38c75315444a
+- path_regex: \.dev\.json$
+  kms: arn:aws:kms:us-east-2:905418326298:key/f3f13a0d-2042-496f-ba47-38c75315444a
+  
+- path_regex: \.prod\.json$
+  kms: arn:aws:kms:us-east-2:905418326298:key/f3f13a0d-2042-496f-ba47-38c75315444a
+
+  # Catchall
+  kms: arn:aws:kms:us-east-2:905418326298:key/f3f13a0d-2042-496f-ba47-38c75315444a
